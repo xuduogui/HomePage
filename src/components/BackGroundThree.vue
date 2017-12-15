@@ -1,6 +1,11 @@
 <template>
   <div class="back-one">
     <img src="../assets/mountains.jpg">
+    <div class="our-describe">
+      <p>从这里</p>
+      <p>开始你的探索</p>
+    </div>
+    
   </div>
 </template>
 
@@ -14,6 +19,13 @@ export default {
 .back-one {
   width: 100%;
   height: 100%;
+}
+.our-describe {
+  position: absolute;
+  top: 60%;
+  left: 25%;
+  font: 2rem "微软雅黑";
+  color: #fff;
 }
 .back-one img {
   width: 100%;

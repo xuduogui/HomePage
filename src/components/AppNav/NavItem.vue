@@ -35,7 +35,7 @@ export default {
         list-style: none;
         background-color: #000;
         opacity: .5;
-        padding: 0 5%;
+        padding: 0 5% 0 10%;
     }
     .nav-items li {
         float: right;

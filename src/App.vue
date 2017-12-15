@@ -1,21 +1,26 @@
 <template>
   <div id="app">
-    <div class="ourlogo">
-        <img src="../src/assets/Mylogo.png" alt="logo" width="33%" height="33%">
-    </div>
+
     <div class="content-box">
+      <div class="ourlogo">
+        <img
+          src="../src/assets/Mylogo.png"
+          alt="logo"
+          width="100%"
+          height="100%">
+      </div>
       
       <div class="nav-all">
         <!-- 插入导航 -->
-        <app-nav style="height:100%;" :btwidth=navw></app-nav>
+        <app-nav style="height:100%;" :btwidth="navw"></app-nav>
       </div>
-
-      <div class="index-box">
+    </div>
+    <div class="index-box">
         <router-link to="/one" class="router-style"></router-link>
         <router-link to="/two" class="router-style"></router-link>
         <router-link to="/three" class="router-style"></router-link>
-      </div>
     </div>
+
     <transition name="my-routers">
       <router-view class="back-ground" />
     </transition>
@@ -83,8 +88,8 @@ export default {
 }
 .index-box {
   position: absolute;
-  right: 0;
-  top: 45%;
+  right: 2%;
+  top: 35%;
   display: block;
   /* justify-content: center; */
   /* align-items: center; */

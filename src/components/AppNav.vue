@@ -1,8 +1,8 @@
 <template>
   <div>
-      <!-- <el-button type="danger" class="btx" @click="btControl">X</el-button> -->
+      <el-button type="danger" class="btx" @click="btControl" icon="el-icon-arrow-left">探索</el-button>
       <transition name="my-nav" class="nav-items">
-          <nav-item v-show="myNav" :navw=navw></nav-item>
+          <nav-item v-show="myNav" :navw='navw'></nav-item>
       </transition>
   </div>
 </template>
@@ -40,6 +40,9 @@ export default {
         padding: 0;
         height: 100%;
         float: right;
+        background-color: transparent;
+        border: none;
+        font: bold 1rem "微软雅黑";
     }
     .nav-items {
         float: right;
